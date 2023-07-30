@@ -2,7 +2,7 @@
 N, S = map(int, input().split())
 A = list(map(int, input().split()))
 
-# 全パターンを探索：(1 << N) は 2 の N 乗
+# 全パターンを探索：(1 << N) は 2 の N 乗(計算回数を示す)左シフト
 answer = "No"
 for i in range(0, 1 << N):
 	partsum = 0

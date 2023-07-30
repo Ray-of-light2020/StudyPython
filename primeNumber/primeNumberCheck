@@ -1,0 +1,13 @@
+
+#素数判定 素数の場合は計算回数がO(N)と遅い。
+
+N = int(input())
+
+for i in range(2, N):
+   if N % i == 0:
+    A = N // i
+    print (str(N) +"/"+str(i)+"="+str(A)+"NotPrimeNumber")
+    break
+else:
+  print("PrimeNumber")
+
