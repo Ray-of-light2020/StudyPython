@@ -1,0 +1,16 @@
+#一日の勉強時間をAiまたはBiとしサイコロをふって1,2がでればAi,4～6ならBi
+#N日の期待値を求める
+
+N = int(input())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+from fractions import Fraction
+day = 0
+studyTime = 0
+
+for i in range(N):
+    day = (A[i] * Fraction(1, 3)) + (B[i] * Fraction(2, 3))
+    studyTime += day 
+
+print (day)   
