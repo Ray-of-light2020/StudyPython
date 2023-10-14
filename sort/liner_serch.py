@@ -6,5 +6,5 @@ min = A[0]
 for i in range(1,len(A)):
     if min > A[i]:
         min = A[i]
-        print (i)
+       
 print (min)

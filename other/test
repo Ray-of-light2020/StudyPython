@@ -1,0 +1,16 @@
+N = int(input())
+
+def factorization(N):
+    divisors = []
+    for i in range(2,int(N**0.5)+1):
+        while N%i==0:
+            divisors.append(i)
+            N //= i
+    if N>1:
+        divisors.append(N)
+    divisors.sort()
+    return divisors
+
+
+
+print(*factorization(N))

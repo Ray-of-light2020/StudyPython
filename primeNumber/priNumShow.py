@@ -14,6 +14,7 @@ for i in range(1,Limit + 1):
         divisor.append(i)
         divisor.append(result)
 
+#昇順に並べかえ
 divisor.sort()
 
 #約数から素数のみ取り出す
@@ -23,7 +24,7 @@ for j in range(0,len(divisor)):
     for k in range(2,priLim + 1):
         if divisor[j] % k ==0:
             is_prime = False
-            break
+            
     if is_prime:
         primeFactor.append(divisor[j])
         

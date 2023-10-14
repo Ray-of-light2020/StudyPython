@@ -1,0 +1,6 @@
+print ('私は{first} {second}です。'.format(first ="高垣",second = "英靖"),end="")
+
+fName = "高垣"
+sName = "英靖"
+
+print (f"私は{fName}{sName}です。")
